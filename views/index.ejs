@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML</title>
+    <style>
+      table {
+        width: 100%;
+      }
+      table, th, td {
+        border: 1px solid #af8a8a;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>Data Result</caption>
+      <thead>
+        <tr>
+          <th></th>
+          <th>남자</th>
+          <th>여자</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>호랑이</th>
+          <td><%=survey[0]%></td>
+          <td><%=survey[2]%></td>
+        </tr>
+        <tr>
+          <th>코끼리</th>
+          <td><%=survey[1]%></td>
+          <td><%=survey[3]%></td>
+        </tr>
+        <tr>
+          <th>합계</th>
+          <td><%=survey[0]+survey[1]%></td>
+          <td><%=survey[2]+survey[3]%></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
